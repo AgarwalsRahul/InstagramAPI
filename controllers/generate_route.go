@@ -32,20 +32,20 @@ func (c Controller) GenerateRoutes() []router.Route {
 	}
 
 	getPostByIdRoute := router.Route{
-		Name:            "Get User",
+		Name:            "Get PosT",
 		Method:          "GET",
 		Path:            "/post/:id",
 		HandlerFunction: c.PostController.GetPostById,
 	}
 	createPost := router.Route{
-		Name:            "Get User",
+		Name:            "Create Post",
 		Method:          "POST",
 		Path:            "/posts",
 		HandlerFunction: c.PostController.CreatePost,
 	}
 
 	getAllPosts := router.Route{
-		Name:            "Get User",
+		Name:            "Get All Posts",
 		Method:          "GET",
 		Path:            "/posts/users/:id/:page",
 		HandlerFunction: c.PostController.GetAllPosts,

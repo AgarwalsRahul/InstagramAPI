@@ -4,14 +4,13 @@ import (
 	"encoding/json"
 	"errors"
 	// "fmt"
-	"net/http"
-
 	appError "github.com/AgarwalsRahul/InstagramAPI/errors"
 	"github.com/AgarwalsRahul/InstagramAPI/models"
 	"github.com/AgarwalsRahul/InstagramAPI/response"
 	"github.com/julienschmidt/httprouter"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
+	"net/http"
 )
 
 // ok represents types capable of validating
